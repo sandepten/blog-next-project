@@ -36,5 +36,5 @@ export const updateBlog = async (id, updateData) => {
 
 export const deleteBlog = async (id) => {
   const blog = await prisma.blog.delete({ where: { id } });
-  return user;
+  return blog;
 };

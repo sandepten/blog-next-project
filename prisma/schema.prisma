@@ -23,7 +23,7 @@ model Contact {
   id      String   @id @default(auto()) @map("_id") @db.ObjectId
   name    String?  @unique
   email   String
-  phone   Int
+  phone   String
   message String
   date    DateTime @default(now())
 }
